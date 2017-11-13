@@ -9,15 +9,16 @@ class CoinToss
         for(int i=0;i<15;i++)
         {
             arr[i]=differ;
-            differ=(differ+10)*2;
+            differ=(differ+10)*2;         //declaring checking times
         }
 
 
+        System.out.println("number of checking time");
        for(int i = 0;i<15;i++)
        {
-           System.out.println(arr[i]);
+           System.out.println(arr[i]);    //number of check
        }
-        System.out.println("\n\ncheck");
+        System.out.println("number of success ");
 
 
 
@@ -67,15 +68,29 @@ class CoinToss
 
        double arr4[]=new double[15];
        double d=0.0;
+
+        System.out.println("probability of having same face on first two toss");
        for(int i=0;i<15;i++)
        {
            d=arr3[i]/arr[i];
-           System.out.println(1-d);
+
+           System.out.println(d);
 
 
 
         }
 
+        System.out.println("\n\nprobability of having same face on three or more than three toss  P(A)");
+
+        for(int i=0;i<15;i++)
+        {
+            d=arr3[i]/arr[i];
+
+            System.out.println(1-d);
+
+
+
+        }
 
 
     }
